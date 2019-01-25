@@ -8,7 +8,7 @@
     "cors": "^2.7.1",
     "debug": "^2.2.0",
     "ejs": "^2.3.3",
-    "express": "4.x.x",
+    "express": ">=4.5.0",
     "express-session": "^1.11.3",
     "jsonwebtoken": "^5.0.5",
     "lodash.clone": "^3.0.3",
