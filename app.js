@@ -36,6 +36,8 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use('/static', express.static('static'))
+
 require('./lib/auth');
 
 

@@ -5,14 +5,17 @@ var clients = [
         clientId: 'client1',
         clientSecret: 'secret1',
         name: 'Client 1',
-        trusted: true
+        trusted: true,
+        tokenSecret: 'SuperSecret123'
 
     }, {
         clientId: 'oauth-consumer-example',
         clientSecret: 'secret2',
         name: 'OAuth Consumer Example Client',
-        redirectURI: 'http://localhost:3002/auth/example/callback',
-        trusted: true
+        //redirectURI: 'http://localhost:3002/auth/example/callback',
+        redirectURI: 'http://localhost:4200/index.html',
+        trusted: true,
+        tokenSecret: 'SuperSecret123'
     }, {
         clientId: 'google-playground',
         clientSecret: 'foo',
