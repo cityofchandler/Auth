@@ -6,11 +6,14 @@ var cookieParser = require('cookie-parser');
 var morgan = require('morgan');
 var passport = require('passport');
 var session = require('express-session');
+var sql = require('mssql')
 var FileStore = require('session-file-store')(session);
 var cors = require('cors');
 
 
 var provider = require('./lib/provider');
+
+
 
 
 var app = express();
@@ -94,4 +97,8 @@ app.use(function (err, req, res, next) {
 });
 
 
-app.listen(3000);
+        var port = 3000
+        app.listen(port);
+        console.log(`Server is listening on port: ${port}`)
+
+

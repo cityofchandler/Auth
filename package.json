@@ -13,6 +13,7 @@
     "jsonwebtoken": "^5.0.5",
     "lodash.clone": "^3.0.3",
     "morgan": "^1.6.1",
+    "mssql": "^4.3.0",
     "node-sync-walker": "^0.1.0",
     "oauth2orize": "1.0.x",
     "oauth2orize-openid": "nicokaiser/oauth2orize-openid#c307ca2",
