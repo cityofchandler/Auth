@@ -22,7 +22,8 @@
             sessionStorage.removeItem('state');
             sessionStorage.removeItem('nonce');
             loginRequest = OIDC.generateLoginRequest({scope : 'openid profile email',
-            response_type : 'token id_token'});
+            // response_type : 'token id_token'});
+            response_type : 'code'});
         </script>
 
     </HEAD>

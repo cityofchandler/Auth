@@ -13,13 +13,19 @@ exports.create = function (data, done) {
         payload: data
     };
     done(null, token);
+    console.log(memory)
 };
 
 exports.get = function (token, done) {
+    console.log('Looking for access token: ' + token)
+    console.log('In DB: ', memory)
     var value = memory[token];
 
     // not found
-    if (!value) return done(null, false);
+    if (!value) {
+        console.log('Memory: ' + value)
+        return done(null, false);
+    }
 
     // expired
     if (value.expires <= Date.now()) {
